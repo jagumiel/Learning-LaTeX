@@ -1,0 +1,65 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{color}
+
+\begin{document}
+
+	\title{My First LaTeX Document}
+	\author{Jose Ángel Gumiel}
+	\date{\today}
+	\maketitle
+	
+	%With the percentage symbol, I can write comments on the code. This does not compile, so it does not show up in the generated pdf neither.
+	
+	\pagenumbering{roman}
+	\tableofcontents
+	\newpage
+	\pagenumbering{arabic}
+	
+	\section{Introduction}
+	I am going to test LaTeX for the very first time.
+	
+	\section{Methods}
+		\subsection{Stage 1}
+		\label{sec1}
+		The first part is installing TeXworks.
+		
+		\subsection{Stage 2}
+		The second part is reading a tutorial.
+		
+		\subsection{Stage 3}
+		This stage is dedicated to typesetting.\\
+		\textit{Italic}, \textsl{slanted}, \textsc{ smallcaps}, CAPS, \textbf{bold}, \texttt{teletype}, \textsf{SansSerif}, \textrm{roman}, \underline{underlined}.\newline
+		{\color{red}Fire.}\break
+		\textbf{{\color{red}Fire.}} \break
+		Now I am going to play with font sizes:
+		{\tiny tiny words}, {\scriptsize scriptsize}, {\footnotesize footnotesize}, {\small small}, {\normalsize normalsize}, {\large large}, {\Large Large}, {\LARGE LARGE}, {\huge huge}.\\
+		
+		Let's recopile what I have done with an easy list.
+		
+		\begin{enumerate}
+			\item Install TeXworks
+			\item Read a tutorial
+			\item Try and fail
+			\begin{enumerate}
+				\item Typesetting
+				\item Colour
+				\item Size
+			\end{enumerate}
+			\item Results
+			\begin{itemize}
+				\item Beautiful Document
+				\item Some knowledge
+			\end{itemize}
+			\item More is to come.
+		\end{enumerate}
+
+		Let's create blankspaces: \\
+		S \hspace{10pt} P \hspace{40pt} A \hspace{60pt} C \hspace{80pt} E \\
+		If you use vspace insted of hspace, it is vertical space.
+		
+	
+	\section{Results}
+	Here are my results. Pretty text, uh?
+	Now I am going to try referring section \ref{sec1} on page \pageref{sec1}
+
+\end{document}
