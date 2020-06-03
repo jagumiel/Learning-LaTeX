@@ -1,0 +1,50 @@
+%Preambulo
+ \documentclass[twocolumn]{article}
+ 
+\usepackage [utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{abstract}
+\renewcommand{\abstractnamefont}{\normalfont\bfseries}
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape}
+
+\title{Ejemplo de Articulo}
+\author{Jose Ángel Gumiel}
+\date{Mayo 2020}
+
+\newcommand{\abstractText}{\noindent
+\lipsum[150]
+}
+
+
+\begin{document}
+%%%%%%%%%%%%
+% Abstract %
+%%%%%%%%%%%%
+
+\twocolumn[
+	\begin{@twocolumnfalse}
+		\maketitle
+		\begin{abstract}
+			\abstractText
+			\newline
+			\newline
+		\end{abstract}
+		{\bf Keywords:} item1, item2, item 3.
+		\newline
+		\newline
+	\end{@twocolumnfalse}]
+	
+\section{Introducción}
+\lipsum
+
+\section{Metodología}
+\lipsum
+
+\section{Resultados}
+\subsection{Resultados Obtenidos}
+\lipsum
+\subsection{Comparación}
+\lipsum
+\end{document}
+
+
